@@ -40,7 +40,7 @@ const MainNavigator = () => {
         tabBarActiveTintColor: '#46BB1D',
         tabBarInactiveTintColor: '#848A9C',
         tabBarStyle: {
-          backgroundColor: '#161B27',
+          backgroundColor: '#ffffff',
           borderTopColor: '#242424',
           height: 70,
           paddingBottom: 20,
@@ -64,12 +64,7 @@ const MainNavigator = () => {
       <Tab.Screen 
         name="NewTransaction" 
         component={NewTransactionScreen} 
-        options={{ 
-          tabBarLabel: 'Thêm GD',
-          tabBarItemStyle: {
-            height: 60,
-          }
-        }} 
+        options={{ tabBarLabel: '' }} 
       />
       <Tab.Screen 
         name="Statistics" 
@@ -93,7 +88,7 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: -15,
+    marginTop: 10,
   },
 });
 
